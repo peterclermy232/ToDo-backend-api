@@ -3,7 +3,7 @@ class ReviewsController < ApplicationController
 
 
   get '/reviews' do
-   #review = Review.all.order(:created_at).reverse
+   review = Review.all.order(:created_at).reverse
    review.to_json(
      only: [:name, :review,:created_at, :id]
    )
