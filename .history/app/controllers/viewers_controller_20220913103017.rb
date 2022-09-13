@@ -9,7 +9,7 @@ class ViewersController < ApplicationController
                 reviews: {only: [:review]}
       }
       )
-    
+      
     end
     
     get '/viewers/:name' do
