@@ -1,11 +1,12 @@
 class MoviesController < ApplicationController
 
+ 
   get '/movies' do
    movie = Movie.all.order(:title)
    movie.to_json
   end
 
-  get '/movies/:id' do
+  #get '/movies/:id' do
     movie = Movie.find(params[:id])
     movie.to_json
   end
